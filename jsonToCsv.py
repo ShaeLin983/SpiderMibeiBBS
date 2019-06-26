@@ -9,8 +9,8 @@ import json
 class json_to_csv():
 
     def __init__(self):
-        self.json_file = open("minbeiBBS.json", "r")
-        self.csv_file = open("minbeiBBS.csv", "w")
+        self.json_file = open("detail.json", "r")
+        self.csv_file = open("detail_BBS.csv", "w", encoding='utf-8')
         self.data_list = json.load(self.json_file)
 
     # 提出json文件的表头
